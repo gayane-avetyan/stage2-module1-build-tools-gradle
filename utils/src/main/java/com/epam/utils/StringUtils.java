@@ -7,11 +7,11 @@ public class StringUtils {
         }
 
         try {
-            double num = Double.parseDouble(str);
+            int num = Integer.parseInt(str);
             return num > 0;
         } catch (NumberFormatException e) {
             try {
-                int num = Integer.parseInt(str);
+                double num = Double.parseDouble(str);
                 return num > 0;
             } catch (NumberFormatException ex) {
                 return false;
