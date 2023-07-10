@@ -1,4 +1,13 @@
-//add everything here
+group 'com.example.demo'
+version '1.0.0'
+
+repositories {
+    mavenLocal()
+}
+
+dependencies {
+    implementation 'com.example.utils:utils:1.3.5'
+}
 
 test {
     useJUnitPlatform()
